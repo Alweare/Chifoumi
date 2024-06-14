@@ -17,7 +17,7 @@
 	</div>
 	<div data-th-if="${partie.resultat == 2}">
 	<h1 >Perdu !</h1>
-	<img  src=@{"images/"+ ${partie.choixUtilisateur} + ".png"} alt="" /> 
+	<img  th:src="@{images/${partie.choixUtilisateur}.png}" alt="" /> 
 	</div>
 
 	<a href="/jouer">Rejouer</a>
